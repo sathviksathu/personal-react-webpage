@@ -1,0 +1,120 @@
+
+body {
+    background-color: #212121;
+    padding: 20px;
+    margin: 0;
+    font-family: 'Roboto Slab', serif;
+  }
+  h1, h2, p, ul, li {
+    color: aliceblue;
+  }
+  ul.header li {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    background-color:#212121 ;
+  }
+  ul.header {
+    background-color: #212121;
+    padding: 0;
+  }
+  ul.header li a {
+    color: aliceblue;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+  }
+  .content {
+    width: 50%;
+    height: 50%;
+    
+    position: relative;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+      
+    margin: auto;
+    background-color: #212121;
+    padding: 20px;
+  }
+  a{
+    color: aqua;
+  }
+  
+  .content h2 {
+    padding: 0;
+    color:aliceblue;
+    margin: 0;
+  }
+  .content li {
+    margin-bottom: 10px;
+    color: aliceblue;
+  }
+
+  .active {
+    background-color: #212121;
+    border-style: solid;
+    border-left-width:0 ;
+    border-right-width: 0;
+    border-top-width: 0;
+    text-underline-position: below;
+    border-bottom-color: aqua;
+  }
+  .focus {
+    background-color: #212121;
+    border-style: solid;
+    border-left-width:0 ;
+    border-right-width: 0;
+    border-top-width: 0;
+    text-underline-position: below;
+    border-bottom-color: red;
+  }
+
+ div.portfolio-pic{
+   
+   
+    display: flex;
+    justify-content: center;
+ }
+ 
+ img{
+   max-width: 30%;
+   border-radius: 50%;
+   border: 2.5px solid aquamarine;
+ }
+
+ ul.footer li {
+  display: inline-block;
+  text-align: center;
+  list-style-type: none;
+  padding: 10px;
+  background-color:#212121 ;
+}
+
+h2{
+color: aqua;
+display:flex;
+justify-content: center;
+align-content: center;
+}
+
+h4{
+  color:aqua;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-weight: normal;
+}
+
+form.namefield{
+  border-color: aquamarine;
+}
+
+.contact-form-division {
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
