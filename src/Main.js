@@ -7,7 +7,6 @@ import {
 import Home from "./Home";
 import Stuff from "./stuff";
 import Content from "./contact";
-import Footer from "./footer";
 import { motion } from 'framer-motion';
 
 
@@ -18,17 +17,14 @@ render(){
     <div style={{flexDirection:"column"}}>
     <HashRouter>
      <div>
-        <motion.div
-            initial={{scale: 0.95}}
-            animate={{scale:1}}
-            transition={{ duration:1}}> 
+       
             <ul className="header">
                 
                 <li><NavLink exact to="/">Home</NavLink></li>
                 <li><NavLink to="/stuff">Stuff</NavLink></li>
                 <li><NavLink to="/contact">Contact</NavLink></li>
             </ul>
-        </motion.div>
+       
             <div className="content">      
             <motion.div
             initial={{scale:0.75}}
@@ -41,7 +37,6 @@ render(){
             </div>
      </div>
     </HashRouter>
-    <Footer />
 </div>
     );
 }

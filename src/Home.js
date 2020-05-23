@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import mypic from './assets/mypic.jpg';
 import { motion } from 'framer-motion';
+import Footer from "./footer";
  
 class Home extends React.Component {
   render() {
@@ -20,6 +21,7 @@ My interests include include physical & mental wellness, Traveling and any inter
 <p>
 Before Samsung, I was studying Computer Science at <a href="https://www.nitk.ac.in/" target="_blank">NITK</a> where I was the captain of a competitive a Cappella team and also coordinated outreach for Women@SCS. I've also done extensive analytical chemistry research and published 5 articles on the subject.</p>
 
+<Footer />
       </div>
     );
   }
