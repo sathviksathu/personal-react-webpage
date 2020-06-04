@@ -1,43 +1,81 @@
 
 body {
+   
     background-color: #212121;
-    padding: 20px;
+    padding: 10px;
     margin: 0;
     font-family: 'Roboto Slab', serif;
   }
   h1, h2, p, ul, li {
     color: aliceblue;
   }
-  ul.header li {
-    display: inline;
+  div.header-div {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+ 
+
+  /*style of static items to left in header*/
+  div.header-static {
+    display: flex;
+    width: 15%;
+    align-items:center;
+    justify-content:space-between ;
+  }
+  div.header-static li {
+    display: flex;
     list-style-type: none;
-    margin: 0;
     background-color:#212121 ;
   }
-  ul.header {
-    background-color: #212121;
-    padding: 0;
+  div.header-static img.logo {
+    max-width: 56px;
+    height: 56px;
+    border-width:0;
   }
-  ul.header li a {
+  div.header-static p{
     color: aliceblue;
+  }
+
+  /*style of nav items in header*/
+  ul.header-nav {
+    background-color: #212121;
+    width: 16%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+  }
+  ul.header-nav li {
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+  }
+  ul.header-nav li a {
     font-weight: bold;
     text-decoration: none;
-    padding: 20px;
     display: inline-block;
+  }
+ 
+  .about{
+    display: inline-block;
+    justify-content: baseline;
+    max-height: 80%;
   }
   .content {
     width: 50%;
-    height: 50%;
-    
+    height: 100%;
+  
     position: relative;
     top:0;
     bottom: 0;
     left: 0;
     right: 0;
+    margin-top: 16px;
       
     margin: auto;
     background-color: #212121;
-    padding: 20px;
   }
   a{
     color: aqua;
@@ -49,37 +87,15 @@ body {
     margin: 0;
   }
   .content li {
-    margin-bottom: 10px;
     color: aliceblue;
   }
 
-  .active {
-    background-color: #212121;
-    border-style: solid;
-    border-left-width:0 ;
-    border-right-width: 0;
-    border-top-width: 0;
-    text-underline-position: below;
-    border-bottom-color: aqua;
-  }
-  .focus {
-    background-color: #212121;
-    border-style: solid;
-    border-left-width:0 ;
-    border-right-width: 0;
-    border-top-width: 0;
-    text-underline-position: below;
-    border-bottom-color: red;
-  }
-
  div.portfolio-pic{
-   
-   
     display: flex;
     justify-content: center;
  }
  
- img{
+ img.mypic {
    max-width: 30%;
    border-radius: 50%;
    border: 2.5px solid aquamarine;
@@ -89,7 +105,8 @@ body {
   display: inline-block;
   text-align: center;
   list-style-type: none;
-  padding: 10px;
+  margin-top: 4px;
+  padding: 16px;
   background-color:#212121 ;
 }
 
@@ -117,4 +134,21 @@ display:flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+}
+
+/*For the typing cursor*/
+.react-rotating-text-cursor {
+  animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+}
+
+@keyframes blinking-cursor {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
